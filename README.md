@@ -16,6 +16,19 @@ python3 -m http.server 8000
 # puis ouvrir http://localhost:8000
 ```
 
+## Deployer sur Vercel
+
+Le projet est configure pour un deploiement statique via `vercel.json`.
+
+Reglages recommandes dans Vercel:
+
+- Framework Preset: Other
+- Build Command: vide
+- Output Directory: vide
+- Install Command: vide
+
+Ensuite, redeployer le projet.
+
 ## Structure
 
 ```
