@@ -207,7 +207,7 @@ main:has(.page-full:not([hidden])) {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../public/images/hero.png");
+  background-image: url("../images/hero.png");
   background-size: cover;
   background-position: center;
   filter: grayscale(1) contrast(1.45) brightness(1.05);
