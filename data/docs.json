@@ -1,0 +1,40 @@
+{
+  "documents": [
+    {
+      "title": "Guide CAF — Prestations familiales",
+      "title_en": "CAF guide — Family benefits",
+      "description": "Présentation des principales aides de la CAF : APL, RSA, prime d'activité, allocations familiales.",
+      "description_en": "Overview of the main CAF benefits: housing, RSA, activity bonus, family allowances.",
+      "file": "public/docs/guide-caf.pdf",
+      "category": "Aides",
+      "category_en": "Benefits"
+    },
+    {
+      "title": "Demande de titre de séjour",
+      "title_en": "Residence permit application",
+      "description": "Liste des pièces à fournir et marche à suivre pour déposer une demande sur l'ANEF.",
+      "description_en": "Required documents and steps to file a request on ANEF.",
+      "file": "public/docs/titre-de-sejour.pdf",
+      "category": "Administratif",
+      "category_en": "Administrative"
+    },
+    {
+      "title": "Accès aux soins",
+      "title_en": "Access to healthcare",
+      "description": "PUMa, AME, CSS : comment obtenir une couverture santé en France.",
+      "description_en": "PUMa, AME, CSS: how to obtain health coverage in France.",
+      "file": "public/docs/acces-aux-soins.pdf",
+      "category": "Santé",
+      "category_en": "Health"
+    },
+    {
+      "title": "Scolariser son enfant",
+      "title_en": "Enrolling your child in school",
+      "description": "Démarches à la mairie et au rectorat, accompagnement linguistique CASNAV.",
+      "description_en": "Steps at the town hall and rectorate, CASNAV language support.",
+      "file": "public/docs/scolarite.pdf",
+      "category": "Famille",
+      "category_en": "Family"
+    }
+  ]
+}

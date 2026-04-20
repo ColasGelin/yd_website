@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youdontneedtopayforthat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span>Youdontneedtopayforthat</span>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button class="tab" data-tab="home" data-i18n="tab.home">Accueil</button>
+      <button class="tab" data-tab="questionnaire" data-i18n="tab.questionnaire">Questionnaire</button>
+      <button class="tab" data-tab="infos" data-i18n="tab.infos">Infos pratiques</button>
+      <button class="tab" data-tab="carte" data-i18n="tab.carte">Carte</button>
+      <button class="tab" data-tab="docs" data-i18n="tab.docs">Documentation</button>
+      <button class="tab" data-tab="engage" data-i18n="tab.engage">Engagez-vous</button>
+    </nav>
+    <div class="topbar-right">
+      <button class="lang-btn" id="lang-toggle" aria-label="Change language">
+        <span id="lang-label">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME : title overlaid on banner photo, CTA below -->
+    <section id="home" class="page page-home">
+      <div class="home-banner">
+        <div class="home-banner-veil"></div>
+        <div class="home-banner-stack">
+          <div class="home-banner-content">
+            <h1><span class="highlight" data-i18n="home.title">Chaque démarche, un pas de plus chez vous.</span></h1>
+            <p class="lead"><span class="highlight" data-i18n="home.lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </span></p>
+          </div>
+
+          <div class="home-cta">
+            <button class="btn btn-hero" id="cta-start" data-i18n="home.cta">
+              Commencer le questionnaire
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTIONNAIRE : full-page, fixed button position -->
+    <section id="questionnaire" class="page page-full" hidden>
+      <div class="q-stage">
+        <div id="q-running">
+          <div class="q-progress">
+            <div class="q-progress-label">
+              <span id="q-tree-label">…</span>
+              <span id="q-progress-count">0 / 10</span>
+            </div>
+            <div class="q-progress-bar"><div id="q-progress-fill"></div></div>
+            <div id="q-steps" class="q-steps" aria-label="Progression de l'arbre"></div>
+          </div>
+
+          <div class="q-middle">
+            <div id="q-card" class="q-card">
+              <div class="q-question-slot">
+                <p id="q-question" class="q-question" data-i18n="q.loading">
+                  Chargement du questionnaire…
+                </p>
+              </div>
+              <div class="q-actions">
+                <button class="btn btn-yes" id="q-yes" data-i18n="q.yes">Oui</button>
+                <button class="btn btn-no" id="q-no" data-i18n="q.no">Non</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="q-summary" class="q-summary" hidden>
+          <div class="q-summary-inner">
+            <h2 data-i18n="q.summary.title">Récapitulatif de vos démarches</h2>
+            <ul id="q-summary-list"></ul>
+            <button class="btn btn-primary" id="q-restart" data-i18n="q.summary.restart">
+              Recommencer
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFOS PRATIQUES -->
+    <section id="infos" class="page" hidden>
+      <h1 data-i18n="infos.title">Infos pratiques</h1>
+      <div class="grid-2">
+        <div class="card">
+          <h2 data-i18n="infos.hours">Horaires d'accueil</h2>
+          <table class="hours">
+            <tr><th data-i18n="day.mon">Lundi</th><td>09h00 – 12h30 · 14h00 – 17h00</td></tr>
+            <tr><th data-i18n="day.tue">Mardi</th><td>09h00 – 12h30</td></tr>
+            <tr><th data-i18n="day.wed">Mercredi</th><td>14h00 – 18h00</td></tr>
+            <tr><th data-i18n="day.thu">Jeudi</th><td>09h00 – 12h30 · 14h00 – 17h00</td></tr>
+            <tr><th data-i18n="day.fri">Vendredi</th><td>09h00 – 12h30</td></tr>
+            <tr><th data-i18n="day.sat">Samedi</th><td><span data-i18n="infos.byAppt">Sur rendez-vous</span></td></tr>
+            <tr><th data-i18n="day.sun">Dimanche</th><td><span data-i18n="infos.closed">Fermé</span></td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h2 data-i18n="infos.meet">Nous rencontrer</h2>
+          <p><strong data-i18n="infos.address">Adresse :</strong><br />12 rue de l'Accueil, 75000 Paris</p>
+          <p><strong data-i18n="infos.phone">Téléphone :</strong><br />01 23 45 67 89</p>
+          <p><strong data-i18n="infos.email">Email :</strong><br />contact@youdontneedtopayforthat.fr</p>
+          <p class="muted" data-i18n="infos.walkin">
+            Venez sans rendez-vous aux horaires d'ouverture. Un·e bénévole
+            vous recevra dans la langue que vous préférez lorsque cela est
+            possible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTE -->
+    <section id="carte" class="page" hidden>
+      <h1 data-i18n="carte.title">Nos lieux d'accueil</h1>
+      <p class="lead" data-i18n="carte.lead">
+        L'association est présente à plusieurs endroits en France.
+      </p>
+      <div class="card map-card">
+        <iframe
+          class="map-iframe"
+          title="Carte de France"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-5.5,41.2,10.0,51.5&layer=mapnik"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- DOCS -->
+    <section id="docs" class="page" hidden>
+      <h1 data-i18n="docs.title">Documentation</h1>
+      <p class="lead" data-i18n="docs.lead">
+        Téléchargez les guides et formulaires utiles pour vos démarches.
+      </p>
+      <div id="docs-list" class="grid-cards">
+        <p class="muted" data-i18n="docs.loading">Chargement des documents…</p>
+      </div>
+    </section>
+
+    <!-- ENGAGE -->
+    <section id="engage" class="page" hidden>
+      <h1 data-i18n="engage.title">Engagez-vous à nos côtés</h1>
+      <div class="grid-2">
+        <div class="card">
+          <h2 data-i18n="engage.donate">Faire un don</h2>
+          <p data-i18n="engage.donateText">
+            Votre soutien nous permet d'accompagner plus de personnes chaque
+            semaine. Un grand merci pour votre générosité.
+          </p>
+          <button class="btn btn-primary" disabled data-i18n="engage.donateBtn">
+            Je fais un don (à venir)
+          </button>
+          <p class="muted" data-i18n="engage.donatePh">
+            Informations de don à compléter.
+          </p>
+        </div>
+        <div class="card">
+          <h2 data-i18n="engage.volunteer">Devenir bénévole</h2>
+          <p data-i18n="engage.volunteerText">
+            Nous recherchons des bénévoles pour l'accueil, la traduction,
+            l'aide administrative et l'aide aux devoirs.
+          </p>
+          <p class="muted" data-i18n="engage.volunteerMail">
+            Écrivez-nous à benevoles@youdontneedtopayforthat.fr pour rejoindre l'équipe.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer">
+      © Youdontneedtopayforthat — Site informatif, contenu en cours de rédaction.
+    </p>
+  </footer>
+
+  <script src="scripts/i18n.js"></script>
+  <script src="scripts/questionnaire.js"></script>
+  <script src="scripts/docs.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
