@@ -102,13 +102,13 @@
         <div class="card">
           <h2 data-i18n="infos.hours">Horaires d'accueil</h2>
           <table class="hours">
-            <tr><th data-i18n="day.mon">Lundi</th><td>09h00 – 12h30 · 14h00 – 17h00</td></tr>
-            <tr><th data-i18n="day.tue">Mardi</th><td>09h00 – 12h30</td></tr>
-            <tr><th data-i18n="day.wed">Mercredi</th><td>14h00 – 18h00</td></tr>
-            <tr><th data-i18n="day.thu">Jeudi</th><td>09h00 – 12h30 · 14h00 – 17h00</td></tr>
-            <tr><th data-i18n="day.fri">Vendredi</th><td>09h00 – 12h30</td></tr>
-            <tr><th data-i18n="day.sat">Samedi</th><td><span data-i18n="infos.byAppt">Sur rendez-vous</span></td></tr>
-            <tr><th data-i18n="day.sun">Dimanche</th><td><span data-i18n="infos.closed">Fermé</span></td></tr>
+            <tr class="day-mon"><th><span class="day-label" data-i18n="day.mon">Lundi</span></th><td>09h00 – 12h30 · 14h00 – 17h00</td></tr>
+            <tr class="day-tue"><th><span class="day-label" data-i18n="day.tue">Mardi</span></th><td>09h00 – 12h30</td></tr>
+            <tr class="day-wed"><th><span class="day-label" data-i18n="day.wed">Mercredi</span></th><td><span data-i18n="infos.closed">Fermé</span></td></tr>
+            <tr class="day-thu"><th><span class="day-label" data-i18n="day.thu">Jeudi</span></th><td>09h00 – 12h30 · 14h00 – 17h00</td></tr>
+            <tr class="day-fri"><th><span class="day-label" data-i18n="day.fri">Vendredi</span></th><td>09h00 – 12h30</td></tr>
+            <tr class="day-sat"><th><span class="day-label" data-i18n="day.sat">Samedi</span></th><td><span data-i18n="infos.closed">Fermé</span></td></tr>
+            <tr class="day-sun"><th><span class="day-label" data-i18n="day.sun">Dimanche</span></th><td><span data-i18n="infos.closed">Fermé</span></td></tr>
           </table>
         </div>
         <div class="card">
@@ -183,12 +183,6 @@
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <p data-i18n="footer">
-      © Youdontneedtopayforthat — Site informatif, contenu en cours de rédaction.
-    </p>
-  </footer>
 
   <script src="scripts/i18n.js"></script>
   <script src="scripts/questionnaire.js"></script>

@@ -32,8 +32,11 @@
     }
     container.innerHTML = "";
     docs.forEach((d) => {
-      const card = document.createElement("div");
+      const card = document.createElement("a");
       card.className = "card doc-card";
+      card.href = d.file;
+      card.target = "_blank";
+      card.rel = "noopener";
 
       const cat = loc(d, "category");
       if (cat) {
@@ -50,13 +53,6 @@
       const desc = document.createElement("p");
       desc.textContent = loc(d, "description");
       card.appendChild(desc);
-
-      const link = document.createElement("a");
-      link.href = d.file;
-      link.target = "_blank";
-      link.rel = "noopener";
-      link.textContent = tr("docs.download");
-      card.appendChild(link);
 
       container.appendChild(card);
     });

@@ -8,6 +8,7 @@
       if (section) section.hidden = t !== id;
     });
     document.body.classList.toggle("with-page-pattern", id !== "home");
+    document.body.classList.toggle("no-scroll", id === "home" || id === "questionnaire");
     document.querySelectorAll(".tab").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.tab === id);
     });
