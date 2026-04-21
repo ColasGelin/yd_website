@@ -3,7 +3,6 @@
   --bg-2: #f7faff;
   --surface: #fbfcff;
   --surface-blue: #e9f1ff;
-  --surface-blue-strong: #dbe9ff;
   --line: #dfe6f0;
   --ink: #2c3042;
   --ink-soft: #6d7388;
@@ -643,7 +642,7 @@ main:has(.page-full:not([hidden])) {
 /* ---- Engage ---- */
 #engage .card::before,
 #infos .card::before {
-  background: var(--surface-blue-strong);
+  background: var(--surface-blue);
   border-color: #c3d5f5;
   box-shadow: 0 6px 18px rgba(68, 102, 156, 0.14);
   transform: none;
