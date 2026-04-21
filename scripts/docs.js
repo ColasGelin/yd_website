@@ -32,11 +32,16 @@
     }
     container.innerHTML = "";
     docs.forEach((d) => {
+<<<<<<< HEAD
       const card = document.createElement("a");
       card.className = "card doc-card";
       card.href = d.file;
       card.target = "_blank";
       card.rel = "noopener";
+=======
+      const card = document.createElement("div");
+      card.className = "card doc-card";
+>>>>>>> 5fa32bd2d9e81e3f625db9025fb550ac8259dcba
 
       const cat = loc(d, "category");
       if (cat) {
@@ -54,6 +59,16 @@
       desc.textContent = loc(d, "description");
       card.appendChild(desc);
 
+<<<<<<< HEAD
+=======
+      const link = document.createElement("a");
+      link.href = d.file;
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.textContent = tr("docs.download");
+      card.appendChild(link);
+
+>>>>>>> 5fa32bd2d9e81e3f625db9025fb550ac8259dcba
       container.appendChild(card);
     });
   }
