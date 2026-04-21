@@ -242,7 +242,7 @@ main:has(.page-full:not([hidden])) {
     linear-gradient(180deg, rgba(15, 30, 60, 0.25) 0%, rgba(15, 30, 60, 0.55) 100%);
 }
 
-/* Both containers (title + CTA) stacked and centered inside the image */
+/* Both test containers (title + CTA) stacked and centered inside the image */
 .home-banner-stack {
   position: relative;
   z-index: 1;
