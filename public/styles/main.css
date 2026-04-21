@@ -168,7 +168,6 @@ main:has(.page-full:not([hidden])) {
 /* Non-skewed containers : questionnaire, infos, carte */
 .q-card,
 .q-summary-inner,
-#infos .card,
 #carte .card {
   background: var(--surface-blue);
   border: 1px solid #cad9f3;
@@ -176,9 +175,7 @@ main:has(.page-full:not([hidden])) {
   box-shadow: 0 6px 18px rgba(68, 102, 156, 0.12);
   isolation: auto;
 }
-#infos .card,
 #carte .card { padding: 0.5rem 0.5rem; }
-#infos .card::before,
 #carte .card::before { content: none; }
 
 #infos .card h2 {
@@ -644,7 +641,8 @@ main:has(.page-full:not([hidden])) {
 }
 
 /* ---- Engage ---- */
-#engage .card::before {
+#engage .card::before,
+#infos .card::before {
   background: var(--surface-blue-strong);
   border-color: #c3d5f5;
   box-shadow: 0 6px 18px rgba(68, 102, 156, 0.14);
