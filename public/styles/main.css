@@ -177,7 +177,7 @@ main:has(.page-full:not([hidden])) {
   isolation: auto;
 }
 #infos .card,
-#carte .card { padding: 1.75rem 2rem; }
+#carte .card { padding: 0.5rem 0.5rem; }
 #infos .card::before,
 #carte .card::before { content: none; }
 
@@ -584,20 +584,34 @@ main:has(.page-full:not([hidden])) {
 #carte {
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 10rem);
+}
+.map-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+.map-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .map-card {
   padding: 0;
   overflow: hidden;
-  flex: 1;
-  min-height: 0;
+  aspect-ratio: 1 / 1;
+  width: 100%;
 }
 .map-iframe {
   width: 100%;
   height: 100%;
-  min-height: 320px;
   border: 0;
   display: block;
+}
+@media (max-width: 768px) {
+  .map-layout {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---- Docs ---- */

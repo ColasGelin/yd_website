@@ -42,7 +42,7 @@
       "day.sat": "Samedi",
       "day.sun": "Dimanche",
 
-      "carte.title": "Nos lieux d'accueil",
+      "carte.title": "Lorem ipsum dolor sit amet",
       "carte.lead":
         "L'association est présente à plusieurs endroits en France.",
 
